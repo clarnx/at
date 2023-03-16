@@ -9,7 +9,7 @@ import Typography from '@mui/material/Typography';
 
 export default function MediaCard() {
   return (
-    <div className='grid grid-cols-3 gap-4'>
+    <div className='cards gap-6'>
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 140 }}
@@ -75,7 +75,7 @@ numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
     </Card>
    
     
-    
     </div>
+
   );
 }
