@@ -3,6 +3,7 @@ import {FaBars,FaTimes} from 'react-icons/fa'
 import { useRef } from 'react'
 import Image from 'next/image';
 import logo from "../../public/logo.jpeg"
+import Link from 'next/link';
 
 function Navbar() {
   const navRef=useRef("");
@@ -13,10 +14,10 @@ function Navbar() {
     <header>
       <div className='logo'><Image height={80} src={logo} alt="logo"/></div>
       <nav ref={navRef}>
-        <a href="/#">Home</a>
-        <a href="/#">Home</a>
-        <a href="/#">Home</a>
-        <a href="/#">Home</a>
+        <Link href="/#">Home</Link>
+        <Link href="/#">Home</Link>
+        <Link href="/#">Home</Link>
+        <Link href="/#">Home</Link>
         <button className='nav-btn nav-close-btn' onClick={showNavbar}>
           <FaTimes/>
         </button>

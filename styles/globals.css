@@ -225,8 +225,8 @@ header nav .login{
   flex-direction: column;
   align-content: center;
   align-items: center;
- background-color: var(--mainColor);
-  color: var(--secondaryColor);
+ background-color: #eee;
+  color: var(--mainColor);
 
 
 }
@@ -243,11 +243,11 @@ header nav .login{
   padding: 0px 40px;
   border-radius: 999em;
   text-decoration: none;
-  color: var(--secondaryColor);
+  color: var(--mainColor);
   font-size: 16px;
       vertical-align:bottom;
     white-space: nowrap;
-  border: 3px solid var(--secondaryColor);
+  border: 3px solid var(--mainColor);
  
  
   
@@ -257,8 +257,8 @@ header nav .login{
   font-weight: bold;
 }
 .click:hover{
-  background: var(--secondaryColor);
-  color: #eee;
+  background: var(--mainColor);
+  color: var(--secondaryColor);
   
 }
 .earth{
@@ -267,7 +267,7 @@ header nav .login{
   height: 70vh;
   margin-top: 5vh;
   
-  justify-items:end;
+  
   
 
 }
