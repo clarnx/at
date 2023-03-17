@@ -23,6 +23,17 @@ export default function Home() {
       <button className='click'>Get mentored</button>
       <div className='earth'><EarthCanvas/></div>
     </div>
+    <div className='about'>
+      <div>About Us</div>
+      <div className='about-text'>
+        <div className='text'>
+          <h1>This is what we do</h1>
+          <p>lorem ipsum dolor lorem ipsum dolorlorem ipsum dolor lorem ipsum dolor lorem ipsum dolor </p>
+        </div>
+        <div className='image' >
+          <Image width="100%" height="100%" src={heroImage}/></div>
+      </div>
+    </div>
     <div className='test'>
       <div>Testimonials</div>
      <MediaCard/>
