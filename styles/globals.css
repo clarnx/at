@@ -358,9 +358,23 @@ header nav .login{
 @media only screen and (max-width:850px){
     .about-text{
       flex-direction: column;
+      justify-content: center;
+      
+      
+    }
+    .about-text h1{
+      font-size:  3vh;
+      
+    }
+    .about-text p{
+      font-size: 1.5vh;
     }
     .image{
       width: 100%;
+    }
+    .about{
+      font-size: 4.5vh;
+      height: 60vh;
     }
 }
 

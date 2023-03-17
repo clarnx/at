@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import Navbar from '../src/components/Navbar'
 import React from 'react'
 import Image from 'next/image'
+import Head from 'next/head'
 
 import heroImage from "../public/hero-image.jpg"
 import logo from "../public/logo.jpeg"
@@ -14,13 +15,23 @@ import MediaCard from '../src/components/MediaCard'
 
 export default function Home() {
   return (
-   <div>    
+   <div>
+    <Head>
+    <meta charset="UTF-8"/>
+  <meta name="description" content="Job Consulting in Australia"/>
+  <meta name="keywords" content="Alt Tab Consulting"/>
+  <meta name="keywords" content="Job Consulting in Australia"/>
+  <meta name="author" content="Ashish Kakkan"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Alt Tab Consulting</title>
+      
+      </Head>    
    <React.Fragment>
       <Navbar/>
     </React.Fragment>
     <div className='hero'>
       <div className='title'>Lorem Ipsum Dolor</div>
-      <button className='click'>Get mentored</button>
+      <button className='click'><Link href="/contact">Get mentored</Link></button>
       <div className='earth'><EarthCanvas/></div>
     </div>
     <div className='about'>

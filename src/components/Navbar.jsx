@@ -15,7 +15,7 @@ function Navbar() {
       <div className='logo'><Image height={80} src={logo} alt="logo"/></div>
       <nav ref={navRef}>
         <Link href="/#">Home</Link>
-        <Link href="/#">Register</Link>
+        <Link href="/contact">Register</Link>
         <Link href="/#">Home</Link>
         <Link href="/#">Home</Link>
         <button className='nav-btn nav-close-btn' onClick={showNavbar}>
