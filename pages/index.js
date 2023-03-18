@@ -31,10 +31,63 @@ export default function Home() {
     </React.Fragment>
     <div className='hero'>
       <div className='title'>Lorem Ipsum Dolor</div>
-      <button className='click'><Link href="/contact">Get mentored</Link></button>
+   <div className='button gap-6'>
+      <Link className='click' href="/contact">Get mentored</Link>
+      <Link className='click' href="/contact">Become a mentor</Link>
+      <Link className='click' href="/contact">Recruit Teams</Link>
+      <Link className='click' href="/contact">Recruit Teams</Link>
+      </div>
       <div className='earth'><EarthCanvas/></div>
     </div>
-    <div className='about'>
+    <div className='landing-mentor'>
+      <div className='mentor-text'>
+      <h1>Mentorship</h1>
+      <p>lorem ipsum dolor lorem ipsum dolorlorem ipsum dolor lorem ipsum dolor lorem ipsum dolor 
+       <br/> <Link className='link' href="/contact">Learn More</Link></p>
+
+      </div>
+      <div className='image'>
+        
+      </div>
+    </div>
+    <div className='landing-mentor'>
+    <div className='image'>
+        
+        </div>
+      <div className='mentor-text'>
+      <h1>Mentorship</h1>
+      <p>lorem ipsum dolor lorem ipsum dolorlorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
+      <br/> <Link className='link' href="/contact">Learn More</Link> </p>
+
+      </div>
+      
+    </div>
+    <div className='landing-mentor'>
+      <div className='mentor-text'>
+      <h1>Mentorship</h1>
+      <p>lorem ipsum dolor lorem ipsum dolorlorem ipsum dolor lorem ipsum dolor lorem ipsum dolor 
+      <br/> <Link className='link' href="/contact">Learn More</Link>
+      </p>
+
+      </div>
+      <div className='image'>
+        
+      </div>
+    </div>
+    <div className='landing-mentor'>
+    <div className='image'>
+        
+        </div>
+      <div className='mentor-text'>
+      <h1>Mentorship</h1>
+      <p>lorem ipsum dolor lorem ipsum dolorlorem ipsum dolor lorem ipsum dolor lorem ipsum dolor 
+      <br/> <Link className='link' href="/contact">Learn More</Link>
+      </p>
+
+      </div>
+      
+    </div>
+    {/* <div className='about'>
       <div>About Us</div>
       <div className='about-text'>
         <div className='text'>
@@ -51,7 +104,7 @@ export default function Home() {
     </div>
     
     
-  
+   */}
   </div>
 
   );

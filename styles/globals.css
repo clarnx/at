@@ -221,7 +221,7 @@ header nav .login{
 }
 .hero{
   /* background-color: var(--mainColor); */
-  height: 90vh;
+ 
   font-size: 9vw;
   font-weight: bold;
   width: 100%;
@@ -231,17 +231,17 @@ header nav .login{
   align-items: center;
  background-color: #eee;
   color: var(--mainColor);
-
+  height: 90vh;
 
 }
 .title{
  
-  height: 35vh;
+  height: 18vh;
 }
 .click{
   display: inline-block;
   box-sizing: border-box;
-  height: 16vh;
+  height: 12vh;
   line-height: 64px;
   background: none;
   padding: 0px 40px;
@@ -252,6 +252,7 @@ header nav .login{
       vertical-align:bottom;
     white-space: nowrap;
   border: 3px solid var(--mainColor);
+  margin-left: 2vw;
  
  
   
@@ -266,10 +267,13 @@ header nav .login{
   
 }
 .earth{
-  /* background-color: red; */
+  
   width: 100%;
-  height: 70vh;
-  margin-top: 5vh;
+  
+  height:60%;
+  
+ 
+  margin-bottom: 0;
   
   
   
@@ -278,10 +282,10 @@ header nav .login{
 .real-earth{
   background-color: black;
   height: 100%;
-  padding-top: 100px;
+  
 }
 .test{
-  height: 90vh;
+  /* height: 90vh; */
   font-size: 9vw;
   font-weight: bold;
   width: 100%;
@@ -304,6 +308,7 @@ header nav .login{
 }
 .click{
   height: 10vh;
+
 }
 .cards{
   flex-direction: column;
@@ -311,7 +316,7 @@ header nav .login{
 }
 
 .cards{
-  display: grid;
+ 
   /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 20px; */
   
@@ -319,7 +324,7 @@ header nav .login{
   justify-content: space-evenly;
 }
 .about{
-  height: 90vh;
+  
   font-size: 9vw;
   font-weight: bold;
   width: 100%;
@@ -353,7 +358,7 @@ header nav .login{
 }
 .image{
   width: 40%;
-  height: 60vh;
+  
 }
 @media only screen and (max-width:850px){
     .about-text{
@@ -377,6 +382,74 @@ header nav .login{
       height: 60vh;
     }
 }
+
+@media only screen and (max-width:420px){
+    .hero{
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+    .button{
+      display: grid;
+    }
+    .earth{
+      height: 35%;
+    }
+}
+.landing-mentor{
+  display: flex;
+  height: 90vh;
+
+}
+.image{
+  background-image: url("../public/hero-image.jpg");
+  width: 60.3%;
+  background-position: center;
+  background-size: cover;
+ 
+  
+}
+.text{
+  width: 50%;
+  background-color: blue;
+}
+.mentor-text{
+  display: flex;
+  flex-direction: column;
+ 
+  
+  
+
+}
+.mentor-text h1{
+  font-size: 5vw;
+  margin-top:10vh ;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.mentor-text p{
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+.link{
+  color: blue;
+}
+@media only screen and (max-width:850px)
+{
+  .landing-mentor{
+    flex-direction: column;
+  }
+  .text{
+    background-color: blue;
+  }
+  .image{
+    background-color: red;
+  }
+}
+
+
+
 
 
 
