@@ -122,13 +122,15 @@ a {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  /* overflow: hidden; */
 
 
 }
+
 html{
   width: 100%;
   height: 100%;
+  scroll-behavior: smooth;
+
 }
 :root{
   --mainColor:#0F2D49;
@@ -136,7 +138,7 @@ html{
   --secondaryColor:#CCBF92;
   --textColor:#eee;
 }
-header{
+.navbar{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -146,12 +148,8 @@ header{
   color: var(--textColor);
   width: 100%;
   font-size:1rem;
-  
-  
-  
-  
 }
-nav a{
+.links{
   margin: 0 2rem;
   color: var(--textColor);
   text-decoration: none;
@@ -162,12 +160,12 @@ nav{
   
 }
 
-nav a:hover{
+.links:hover{
   color: var(--secondaryColor);
   border-bottom: #CCBF92 solid;
 }
 
-header .nav-btn{
+.nav-btn{
   padding: 5px;
   cursor: pointer;
   background:transparent;
@@ -178,10 +176,7 @@ header .nav-btn{
   opacity: 0;
   
 }
-header nav .login{
-  margin-left: 27rem;
- 
-}
+
 
 @media only screen and (max-width:1024px){
   header .nav-btn{
@@ -213,8 +208,9 @@ header nav .login{
     right: 2rem;
 
   }
-  nav a{
+  .links{
     font-size: 1.5rem;
+    color: black;
   }
   
 
@@ -231,7 +227,7 @@ header nav .login{
   align-items: center;
  background-color: #eee;
   color: var(--mainColor);
-  height: 90vh;
+  
 
 }
 .title{
@@ -239,127 +235,18 @@ header nav .login{
   height: 18vh;
 }
 .click{
-  display: inline-block;
-  box-sizing: border-box;
-  height: 12vh;
-  line-height: 64px;
-  background: none;
-  padding: 0px 40px;
-  border-radius: 999em;
-  text-decoration: none;
+  background-color: var(--mainColorLight);
   color: var(--mainColor);
-  font-size: 16px;
-      vertical-align:bottom;
-    white-space: nowrap;
+ font-size: 2vw;
   border: 3px solid var(--mainColor);
-  margin-left: 2vw;
- 
- 
-  
-  
-
   transition: .15s background-color,.15s border-color,.15s color,.15s fill;
-  font-weight: bold;
 }
 .click:hover{
-  background: var(--mainColor);
-  color: var(--secondaryColor);
-  
-}
-.earth{
-  
-  width: 100%;
-  
-  height:60%;
-  
- 
-  margin-bottom: 0;
-  
-  
-  
-
-}
-.real-earth{
-  background-color: black;
-  height: 100%;
-  
-}
-.test{
-  /* height: 90vh; */
-  font-size: 9vw;
-  font-weight: bold;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
- background-color: #eee;
+  background: var(--secondaryColor);
   color: var(--mainColor);
   
-
-}
-@media only screen and (max-width:850px){
-  
-.title{
-  height: 11vh;
-}
-.hero{
-  font-size: 4.5vh;
-}
-.click{
-  height: 10vh;
-
-}
-.cards{
-  flex-direction: column;
-}
 }
 
-.cards{
- 
-  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px; */
-  
-  display: flex;
-  justify-content: space-evenly;
-}
-.about{
-  
-  font-size: 9vw;
-  font-weight: bold;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
- background-color: #eee;
-  color: var(--mainColor);
-  
-  
-}
-.about-text{
-  display: flex;
-  justify-content: space-around;
-}
-.about-text h1{
-  font-size: 5vw;
-}
-.about-text p{
-  font-size: 1.5vw;
-}
-.text{
-  width: 55%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content:start;
-  align-content:flex-start;
-  
-}
-.image{
-  width: 40%;
-  
-}
 @media only screen and (max-width:850px){
     .about-text{
       flex-direction: column;
@@ -446,6 +333,11 @@ header nav .login{
   .image{
     background-color: red;
   }
+}
+.hero{
+  background-image: url("../public/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 

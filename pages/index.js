@@ -7,15 +7,14 @@ import Head from 'next/head'
 
 import heroImage from "../public/hero-image.jpg"
 import logo from "../public/logo.jpeg"
-import EarthCanvas from '../src/components/EarthCanvas'
+import Landing from '../src/components/Landing'
 import Link from 'next/link'
-import MediaCard from '../src/components/MediaCard'
-
+import About from '../src/components/About'
 
 
 export default function Home() {
   return (
-   <div>
+   <section>
     <Head>
     <meta charset="UTF-8"/>
   <meta name="description" content="Job Consulting in Australia"/>
@@ -29,83 +28,29 @@ export default function Home() {
    <React.Fragment>
       <Navbar/>
     </React.Fragment>
-    <div className='hero'>
-      <div className='title'>Lorem Ipsum Dolor</div>
-   <div className='button gap-6'>
-      <Link className='click' href="/contact">Get mentored</Link>
-      <Link className='click' href="/contact">Become a mentor</Link>
-      <Link className='click' href="/contact">Recruit Teams</Link>
-      <Link className='click' href="/contact">Recruit Teams</Link>
-      </div>
-      <div className='earth'><EarthCanvas/></div>
-    </div>
-    <div className='landing-mentor'>
-      <div className='mentor-text'>
-      <h1>Mentorship</h1>
-      <p>lorem ipsum dolor lorem ipsum dolorlorem ipsum dolor lorem ipsum dolor lorem ipsum dolor 
-       <br/> <Link className='link' href="/contact">Learn More</Link></p>
-
-      </div>
-      <div className='image'>
-        
-      </div>
-    </div>
-    <div className='landing-mentor'>
-    <div className='image'>
-        
+    <section className='hero'>
+    <div className="mx-auto z-[1] flex justify-center items-center w-full h-full">
+        <div className="flex flex-col gap-24 text-center">
+          {/* CHILD 1 */}
+          <div className="flex flex-col md:justify-center md:items-center pt-[10rem] pb-[10rem]">
+            <h1 className="font-bold tracking-wide mb-3 text-white text-base sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+              Alt Tab Consulting
+            </h1>
+            <p className="font-normal leading-8 text-white text-[3vw]">
+              Lets make the shift
+            </p>
+            <a className='mt-5 click py-2 px-4 md:py-3 md:px-6 w-full md:w-auto max-w-xs rounded-full' href="#about">
+  <button class="w-full md:w-auto font-bold py-2 px-4 md:py-3 md:px-6 rounded-full">
+    Get Started
+  </button>
+</a>
+          </div>
+          {/* CHILD 2 */}
         </div>
-      <div className='mentor-text'>
-      <h1>Mentorship</h1>
-      <p>lorem ipsum dolor lorem ipsum dolorlorem ipsum dolor lorem ipsum dolor lorem ipsum dolor
-      <br/> <Link className='link' href="/contact">Learn More</Link> </p>
-
       </div>
-      
-    </div>
-    <div className='landing-mentor'>
-      <div className='mentor-text'>
-      <h1>Mentorship</h1>
-      <p>lorem ipsum dolor lorem ipsum dolorlorem ipsum dolor lorem ipsum dolor lorem ipsum dolor 
-      <br/> <Link className='link' href="/contact">Learn More</Link>
-      </p>
-
-      </div>
-      <div className='image'>
-        
-      </div>
-    </div>
-    <div className='landing-mentor'>
-    <div className='image'>
-        
-        </div>
-      <div className='mentor-text'>
-      <h1>Mentorship</h1>
-      <p>lorem ipsum dolor lorem ipsum dolorlorem ipsum dolor lorem ipsum dolor lorem ipsum dolor 
-      <br/> <Link className='link' href="/contact">Learn More</Link>
-      </p>
-
-      </div>
-      
-    </div>
-    {/* <div className='about'>
-      <div>About Us</div>
-      <div className='about-text'>
-        <div className='text'>
-          <h1>This is what we do</h1>
-          <p>lorem ipsum dolor lorem ipsum dolorlorem ipsum dolor lorem ipsum dolor lorem ipsum dolor </p>
-        </div>
-        <div className='image' >
-          <Image width="100%" height="100%" src={heroImage}/></div>
-      </div>
-    </div>
-    <div className='test'>
-      <div>Testimonials</div>
-     <MediaCard/>
-    </div>
-    
-    
-   */}
-  </div>
+      </section>
+    <section id="about">hello</section>
+  </section>
 
   );
 }

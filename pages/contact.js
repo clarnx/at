@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Navbar from "../src/components/Navbar"
 
 function contact() {
   const form = useRef();
@@ -17,6 +18,8 @@ function contact() {
   };
 
   return (
+    <section>
+      <Navbar/>
     <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>
       <input type="text" name="user_name" />
@@ -26,6 +29,7 @@ function contact() {
       <textarea name="message" />
       <button type="submit">send</button>
     </form>
+    </section>
   );
 }
 
