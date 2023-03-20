@@ -28,7 +28,7 @@ export default function Home() {
       <Navbar/>
     </React.Fragment>
     
-    <section className=" hero h-screen flex flex-col justify-center items-center bg-gray-800 text-white">
+    <section className="hero h-screen flex flex-col justify-center items-center bg-gray-800 text-white">
   <h1 className="text-4xl md:text-6xl font-bold text-white text-center">Alt Tab Consulting</h1>
   <p className="text-white mt-4 text-lg md:text-xl">Let's make the shift</p>
   <a href="#about" className="inline-block click font-bold py-2 px-6 mt-4 rounded-full">Get Started</a>

@@ -144,7 +144,7 @@ html{
   justify-content: space-between;
   height: 90px;
   padding: 0 2rem;
-  background-color: var(--mainColor);
+  background-color: var(--mainColor) !important;
   color: var(--textColor);
   width: 100%;
   font-size:1rem;
