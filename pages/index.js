@@ -27,28 +27,38 @@ export default function Home() {
    <React.Fragment>
       <Navbar/>
     </React.Fragment>
-    <section className='hero'>
-    <div className="mx-auto z-[1] flex justify-center items-center w-full h-full">
-        <div className="flex flex-col gap-24 text-center">
-          {/* CHILD 1 */}
-          <div className="flex flex-col md:justify-center md:items-center pt-[10rem] pb-[10rem]">
-            <h1 className="font-bold tracking-wide mb-3 text-white text-base sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-              Alt Tab Consulting
-            </h1>
-            <p className="font-normal leading-8 text-white text-[3vw]">
-              Lets make the shift
-            </p>
-            <a className='mt-5 click py-2 px-4 md:py-3 md:px-6 w-full md:w-auto max-w-xs rounded-full' href="#about">
-  <button class="w-full md:w-auto font-bold py-2 px-4 md:py-3 md:px-6 rounded-full">
-    Get Started
-  </button>
-</a>
-          </div>
-          {/* CHILD 2 */}
-        </div>
+    
+    <section className=" hero h-screen flex flex-col justify-center items-center bg-gray-800 text-white">
+  <h1 className="text-4xl md:text-6xl font-bold text-white text-center">Alt Tab Consulting</h1>
+  <p className="text-white mt-4 text-lg md:text-xl">Let's make the shift</p>
+  <a href="#about" className="inline-block click font-bold py-2 px-6 mt-4 rounded-full">Get Started</a>
+</section>
+      
+    <section id="about">
+    <div className="h-screen flex flex-row ">
+        
+    <div className='w-4/12 ml-10 my-auto items-center justify-center'>
+    <h1 className="text-4xl abt md:text-6xl font-bold text-left">What <br/> we <br/> Provide</h1>
+    </div>
+    <div className='w-8/12 ml-6 flex flex-col'>
+      <div className='h-3/6'>
+      
+      <h1 className='mt-10 text-2xl md:text-4xl text-left underline'>Mentorship Services</h1>
+      <p className="mt-4 text-[2rem] md:text-xl text-left" >We offer personalized mentorship programs for IT job seekers, as well as career mentoring for IT professionals seeking to develop their skills and advance in their careers.
+      <Link href="/mentor" className='text-blue-400'>Read More</Link></p>
+      
       </div>
-      </section>
-    <section id="about">hello</section>
+      <h1 className='mt-10 text-2xl md:text-4xl text-left underline'>Recruitment Services</h1>
+      <p className="mt-4 text-[2rem] md:text-xl text-left">We are a leading recruitment agency that specializes in providing top-notch HR services to both job seekers and employers in the IT industry. Our mission is to help talented individuals find the best IT career opportunities and assist companies in finding the right staffing solutions for their businesses.
+      <Link href="/recruit" className='text-blue-400'><br/>Read More</Link></p>
+    
+    </div>
+ 
+
+</div>
+
+
+    </section>
   </section>
 
   );

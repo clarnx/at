@@ -74,19 +74,25 @@ function ResponsiveAppBar() {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-             
-                <MenuItem className='links' onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"><Link href="/index">Home</Link></Typography>
-                </MenuItem>
-                <MenuItem className='links' onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"><Link href="/contact">Contact</Link></Typography>
-                </MenuItem>
+             <Link href="/index">
                 <MenuItem className='links' onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">Home</Typography>
                 </MenuItem>
+                </Link>
+                <Link href="/Contact">
                 <MenuItem className='links' onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Home</Typography>
+                  <Typography textAlign="center">Contact</Typography>
                 </MenuItem>
+                </Link>
+                <Link href="/mentor">
+                <MenuItem className='links' onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">Mentorship</Typography>
+                </MenuItem></Link>
+<Link href="/recruit">
+                <MenuItem className='links' onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">Recruitment</Typography>
+                </MenuItem>
+                </Link>
             
             </Menu>
           </Box>
@@ -101,7 +107,7 @@ function ResponsiveAppBar() {
                 Home
               </Button>
               </Link>
-              <Link className="links" href="/contact">
+              <Link className="links" href="/Contact">
               <Button
                 
                 onClick={handleCloseNavMenu}
@@ -110,13 +116,22 @@ function ResponsiveAppBar() {
                 Contact
               </Button>
               </Link>
-              <Link className="links" href="/contact">
+              <Link className="links" href="/recruit">
               <Button
                 
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                Contact
+                Recruit
+              </Button>
+              </Link>
+              <Link className="links" href="/mentor">
+              <Button
+                
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                Mentor
               </Button>
               </Link>
           
