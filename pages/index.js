@@ -7,9 +7,8 @@ import Head from 'next/head'
 
 import heroImage from "../public/hero-image.jpg"
 import logo from "../public/logo.jpeg"
-import Landing from '../src/components/Landing'
 import Link from 'next/link'
-import About from '../src/components/About'
+
 
 
 export default function Home() {
