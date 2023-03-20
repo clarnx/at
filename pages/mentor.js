@@ -14,7 +14,7 @@ function mentor() {
     <div className='w-8/12 ml-6 flex flex-col'>
       
       
-      <p className="mt-4 text-[1rem] md:text-lg">
+      <p className="mt-4 text-[1rem] md:text-lg text-left">
       Our team of experienced IT mentors provides expert guidance and coaching for job readiness, skills development, and job success. We believe that mentorship is a key component of professional growth and success, and we are committed to helping IT professionals achieve their goals.    <br/><br/>
       Our mentorship programs are tailored to your individual needs and career goals. We work with you to identify your strengths and areas for improvement, and we provide personalized guidance and support to help you achieve your goals. Our goal is to help you develop the skills and knowledge you need to succeed in the competitive world of IT.<br/><br/>
       In addition to our mentorship services, we also offer IT recruitment solutions to help companies find the right talent for their IT needs. Our team of experienced recruiters specializes in identifying and attracting top IT professionals, and we work closely with our clients to understand their specific hiring needs.

@@ -14,7 +14,7 @@ function recruit() {
     <div className='w-8/12 ml-6 flex flex-col'>
       
       
-      <p className="mt-4 text-[1rem] md:text-lg">
+      <p className="mt-4 text-[1rem] md:text-lg text-left">
       At Alt Tab Consulting, we understand the importance of mentoring by IT industry experience. That's why we have a team of experienced recruiters who have extensive knowledge of the IT industry and can guide job seekers towards their dream job. We also provide mentorship programs to help job seekers enhance their skills and knowledge to become successful in their IT career.
     <br/><br/>
 We have job vacancies in various areas such as Business Analyst, Project Manager/Scrum Master and more. Our IT job search is designed to help you find the right job that matches your skills, experience, and career goals.
